@@ -21,7 +21,7 @@ To use this module, you should have Terraform installed and configured for AWS. 
 ```hcl
 # Create EC2 instances
 module "vpn" {
-  source                                    = "git::https://github.com/yadavprakash/terraform-aws-vpn.git?ref=v1.0.0"
+  source                                    = "git::https://github.com/yadavprakash/terraform-aws-vpn.git"
   name                                      = local.name
   environment                               = local.environment
   vpc_id                                    = module.vpc.vpc_id
